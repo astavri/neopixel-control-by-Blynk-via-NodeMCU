@@ -4,7 +4,7 @@
 #include <SPI.h>
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
-char auth[] = "aa258095c7bf47c38c84e9502c8005cc";  
+char auth[] = "XXXXXXXXXXXXXXX";  // Your Blynk auth code
 
  #define PIN            14     // GPIO pin
  #define STRIPSIZE      60     // Number of pixels in strip
@@ -16,7 +16,7 @@ char auth[] = "aa258095c7bf47c38c84e9502c8005cc";
 void setup()
 {
   Serial.begin(9600);
-  Blynk.begin(auth, "ATT3r2FUV4", "3xds9?xwf4ph");
+  Blynk.begin(auth, "XXXXXXXX", "PASSWORD"); // YOUR SSID and Password
   strip.begin();
   strip.setBrightness(25);
   strip.show();
